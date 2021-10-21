@@ -1,7 +1,5 @@
 body {
     font-family: 'Lora', serif;
-
-
 }
 
 .entete {
@@ -16,5 +14,10 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
     background-size: cover;
+}
+
+.principal {
+    background-color: black;
+    color: red;
 
 }
