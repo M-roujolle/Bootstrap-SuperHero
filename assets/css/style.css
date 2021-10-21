@@ -7,3 +7,14 @@ body {
 .entete {
     background-color: black;
 }
+
+.imgentete {
+
+    background: url(../img/couv5.jpg);
+    height: 60vh;
+    width: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: cover;
+
+}

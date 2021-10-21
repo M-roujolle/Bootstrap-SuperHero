@@ -15,44 +15,64 @@
 </head>
 
 <body>
+
     <!-- TITRE PRINCIPAL------------------------------- -->
     <header>
+
         <div class="text-center">
-            <h1>Super Zéro Marvel</h1>
+            <h1 class="text-danger bg-dark">Super Zéro Marvel</h1>
         </div>
     </header>
 
     <!-- IMAGE ENTETE------------------------------------------- -->
 
-    <div class="container-fluid entete">
-        <div class="row">
-            <img class="entete col-4 mx-auto" src="assets/img/unnamed.jpg">
-        </div>
+    <div class="imgentete d-none d-sm-block">
+        <!-- "container-fluid entete d-flex justify-content-center" -->
+        <!-- <div class="row col-lg-12">
+            <img class="entete" src="assets/img/1.jpg">
+        </div> -->
     </div>
 
     <!-- NAVBAR------------------------------------- -->
-    <nav class="navbar navbar-expand-lg navbar-primary bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark sticky-top">
         <div class="container-fluid">
-            <div class="collapse navbar-collapse justify-content-end mx-auto" id="navbarSupportedContent">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                    </li>
+                </ul>
                 <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Trouves ton SuperZero"
-                        aria-label="Search">
+                    <input class="form-control me-2" type="search" placeholder="Cherche ton Héro" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Chercher</button>
                 </form>
             </div>
         </div>
     </nav>
     <!-- ASIDE--------------------------------------- -->
-    <div class="container mt-5">
+
+    <div class="container mt-3">
         <div class="row">
             <aside class="col-lg-4 myBorderYellow">
-                <h2 class="text-center">Spider Man</h2>
-                <img src="assets/img/marvel-spider-man-ps4.jpeg" class="rounded img-fluid" alt="SpiderMan">
+                <h2 class="text-center">Marvel Studio</h2>
+                <img src="assets/img/2.jpg" class="rounded img-fluid" alt="SpiderMan">
                 </p>
-                <ul class="h2">
-                    <li>L'homme araignée</li>
-                    <li>Peter Parker</li>
-                    <li>Reporter</li>
+                <ul class="h3 d-grid gap-3">
+                    <li class="text-center">Fabrique de Super Hero </li>
+                    <li class="text-center">Studio Americain</li>
+                    <li class="text-center ">Pas la pour enfiller des perles
+                    </li>
                 </ul>
 
 
@@ -73,60 +93,59 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <th>1 <img src="assets/img/marvel-spider-man-ps4.jpeg" height="50rem" width="50rem"
-                                    scope="row"> </th>
+                            <td>1 <img src="assets/img/marvel-spider-man-ps4.jpeg" height="50rem" width="50rem"
+                                    scope="row"> </td>
                             <td>Parker</td>
                             <td>Peter</td>
                             <td>Spider Man</td>
                             <td>
                                 <!-- Button trigger modal -->
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                <button type="button" class="btn btn-danger" data-bs-toggle="modal"
                                     data-bs-target="#exampleModal1">
                                     Plus d'infos
                                 </button>
 
                                 <!-- Modal -->
-                                <div class="modal fade text-black" id="exampleModal1" tabindex="-1"
+                                <div class="modal fade text-black text-center" id="exampleModal1" tabindex="-1"
                                     aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-dialog">
                                         <div class="modal-content">
+
                                             <div class="modal-header">
                                                 <h5 class="modal-title" id="exampleModalLabel">Spider Man</h5>
                                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                     aria-label="Close"></button>
                                             </div>
                                             <div class="modal-body">
-                                                <img src="assets/img/marvel-spider-man-ps4.jpeg" height="150rem"
+                                                <img src="assets/img/marvel-spider-man-ps4.jpeg" height="200rem"
                                                     width="auto">
+                                                <p class="h2">
+                                                    <p>Fan des araignées</p>
+                                                    <p>Aime la pizza</p>
+                                                    <p>Super airaignée</p>
+                                                </p>
                                             </div>
-                                            <div class="modal-footer">
-                                                <ul class="h2">
-                                                    <li>L'homme araignée</li>
-                                                    <li>Peter Parker</li>
-                                                    <li>Reporter</li>
-                                                </ul>
 
-
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </td>
                         </tr>
                         <tr>
-                            <th scope="row">2</th>
+                            <th scope="row">2 <img src="assets/img/iron.jpg" height="50rem" width="50rem" scope="row">
+                            </th>
                             <td>Stark</td>
                             <td>Tony</td>
                             <td>Iron Man</td>
                             <td>
                                 <!-- Button trigger modal -->
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                <button type="button" class="btn btn-danger" data-bs-toggle="modal"
                                     data-bs-target="#exampleModal2">
                                     Plus d'infos
                                 </button>
 
                                 <!-- Modal -->
-                                <div class="modal fade text-black" id="exampleModal2" tabindex="-1"
+                                <div class="modal fade text-black text-center" id="exampleModal2" tabindex="-1"
                                     aria-labelledby="exampleModalLabel2" aria-hidden="true">
                                     <div class="modal-dialog">
                                         <div class="modal-content">
@@ -136,16 +155,84 @@
                                                     aria-label="Close"></button>
                                             </div>
                                             <div class="modal-body">
-                                                <img src="assets/img/iron.jpg" height="150rem" width="auto">
+                                                <img src="assets/img/iron.jpg" height="250rem" width="auto">
+                                                <p class="h2">
+                                                    <p>Autain</p>
+                                                    <p>Aime la fete</p>
+                                                    <p>Super armure</p>
+                                                </p>
                                             </div>
-                                            <div class="modal-footer">
-                                                <ul class="h2">
-                                                    <li>L'homme de feu</li>
-                                                    <li>Tony Stark</li>
-                                                    <li>Branleur</li>
-                                                </ul>
 
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3 <img src="assets/img/captainamerica.webp" height="50rem" width="50rem"
+                                    scope="row"></th>
+                            <td>Rogers</td>
+                            <td>Steve</td>
+                            <td>Captain America</td>
+                            <td>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal3">
+                                    Plus d'infos
+                                </button>
 
+                                <!-- Modal -->
+                                <div class="modal fade text-black text-center" id="exampleModal3" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel3" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Captain America</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <img src="assets/img/captainamerica.webp" height="220rem" width="auto">
+                                                <p class="h2">
+                                                    <p>Aime les collants</p>
+                                                    <p>Ne porte pas de lunette</p>
+                                                    <p>Bouclier boomerang</p>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4 <img src="assets/img/thor.jpg" height="50rem" width="50rem" scope="row">
+                            </th>
+                            <td>??</td>
+                            <td>??</td>
+                            <td>Thor</td>
+                            <td>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal4">
+                                    Plus d'infos
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade text-black text-center" id="exampleModal4" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel4" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Thor</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <img src="assets/img/thor.jpg" height="250rem" width="auto">
+                                                <p class="h2">
+                                                    <p>Aime les beaux cheveux</p>
+                                                    <p>N'aime pas l'eau</p>
+                                                    <p>Marteau electrique</p>
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -153,92 +240,231 @@
                             </td>
                         </tr>
                         <tr>
-                            <th scope="row">3</th>
-                            <td>Rogers</td>
-                            <td>Steve</td>
-                            <td>Captain America</td>
-                            <td><button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal">
-                                    + d'infos
-                                </button></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">4</th>
-                            <td>??</td>
-                            <td>??</td>
-                            <td>Thor</td>
-                            <td><button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal">
-                                    + d'infos
-                                </button></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">5</th>
+                            <th scope="row">5 <img src="assets/img/hulk.jpg" height="50rem" width="50rem" scope="row">
+                            </th>
                             <td>Banner</td>
                             <td>Bruce</td>
                             <td>Hulk</td>
-                            <td><button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal">
-                                    + d'infos
-                                </button></td>
+                            <td>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal5">
+                                    Plus d'infos
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade text-black text-center" id="exampleModal5" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel5" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Hulk</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <img src="assets/img/hulk.jpg" height="250rem" width="auto">
+                                                <p class="h2">
+                                                    <p>Porte des vetements trop petits</p>
+                                                    <p>Fais des abdos en dormant</p>
+                                                    <p>Puissance hors norme</p>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
-                            <th scope="row">6</th>
+                            <th scope="row">6 <img src="assets/img/Black-Widow.jpg" height="50rem" width="50rem"
+                                    scope="row"></th>
                             <td>Romanoff</td>
                             <td>Natasha</td>
                             <td>Black Widow</td>
-                            <td><button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal">
-                                    + d'infos
-                                </button></td>
+                            <td>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal6">
+                                    Plus d'infos
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade text-black text-center" id="exampleModal6" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel6" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Black Widow</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <img src="assets/img/Black-Widow.jpg" height="250rem" width="auto">
+                                                <p class="h2">
+                                                    <p>Aime le noir</p>
+                                                    <p>Aime le cuir</p>
+                                                    <p>Forte en bagarre</p>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
-                            <th scope="row">7</th>
+                            <th scope="row">7 <img src="assets/img/blackpanther.jpg" height="50rem" width="50rem"
+                                    scope="row"></th>
                             <td>T'challa</td>
                             <td>??</td>
                             <td>Black Panther</td>
-                            <td><button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal">
-                                    + d'infos
-                                </button></td>
+                            <td>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal7">
+                                    Plus d'infos
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade text-black text-center" id="exampleModal7" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel7" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Black Panther</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <img src="assets/img/blackpanther.jpg" height="250rem" width="auto">
+                                                <p class="h2">
+                                                    <p>Aime les chats</p>
+                                                    <p>Agilité accrue</p>
+                                                    <p>Griffe en vibranium</p>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
-                            <th scope="row">8</th>
+                            <th scope="row">8 <img src="assets/img/captainmarvel.jpg" height="50rem" width="50rem"
+                                    scope="row"></th>
                             <td>Denvers</td>
                             <td>Carole</td>
                             <td>Captain Marvel</td>
-                            <td><button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal">
-                                    + d'infos
-                                </button></td>
+                            <td>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal8">
+                                    Plus d'infos
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade text-black text-center" id="exampleModal8" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel8" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Captain Marvel</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <img src="assets/img/captainmarvel.jpg" height="250rem" width="auto">
+                                                <p class="h2">
+                                                    <p>Ancienne pilote US Air Force</p>
+                                                    <p>Pouvoirs cosmique</p>
+                                                    <p>Aime les biscottes</p>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
-                            <th scope="row">9</th>
+                            <th scope="row">9 <img src="assets/img/antman.jpg" height="50rem" width="50rem" scope="row">
+                            </th>
                             <td>Lang</td>
                             <td>Scott</td>
                             <td>Ant Man</td>
-                            <td><button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal">
-                                    + d'infos
-                                </button></td>
+                            <td>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal9">
+                                    Plus d'infos
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade text-black text-center" id="exampleModal9" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel9" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Ant Man</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <img src="assets/img/antman.jpg" height="250rem" width="auto">
+                                                <p class="h2">
+                                                    <p>Deteste les fourmis</p>
+                                                    <p>Sens de l'humour aigue</p>
+                                                    <p>Se miniaturise</p>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
-                            <th scope="row">10</th>
+                            <th scope="row">10 <img src="assets/img/doctorstrange.jpg" height="50rem" width="50rem"
+                                    scope="row"></th>
                             <td>Strange</td>
                             <td>Stephen</td>
                             <td>Doctor Strange</td>
-                            <td><button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal">
-                                    + d'infos
-                                </button></td>
+                            <td>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal10">
+                                    Plus d'infos
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade text-black text-center" id="exampleModal10" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel10" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Doctor Strange</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <img src="assets/img/doctorstrange.jpg" height="250rem" width="auto">
+                                                <p class="h2">
+                                                    <p>Aime le viveldop</p>
+                                                    <p>Veut devenir psychologue</p>
+                                                    <p>Pouvoir téléphatique</p>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
 
-
-
         </div>
     </div>
+    <footer>
+        <div class="bg-danger pt-5 pb-5">
+            <p class="text-white text-center">Design for LHP7</p>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
