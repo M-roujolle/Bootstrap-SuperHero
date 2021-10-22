@@ -15,11 +15,10 @@
     <title>Bootsrap SuperHero</title>
 </head>
 
-<body>
+<body class="border border-info">
 
     <!-- TITRE PRINCIPAL------------------------------- -->
     <header>
-
         <div class="text-center">
             <h1 class="text-danger pb-2 pt-2 principal">Super Zéro Marvel</h1>
         </div>
@@ -28,10 +27,6 @@
     <!-- IMAGE ENTETE------------------------------------------- -->
 
     <div class="imgentete d-none d-sm-block h1">
-        <!-- "container-fluid entete d-flex justify-content-center" -->
-        <!-- <div class="row col-lg-12">
-            <img class="entete" src="assets/img/1.jpg">
-        </div> -->
     </div>
 
     <!-- NAVBAR------------------------------------- -->
@@ -56,36 +51,36 @@
                 </ul>
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Cherche ton Héro" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Chercher</button>
+                    <button class="btn btn-outline-danger" type="submit">Chercher</button>
                 </form>
             </div>
         </div>
     </nav>
+
     <!-- ASIDE--------------------------------------- -->
 
-    <div class="container mt-3">
-        <div class="row">
-            <aside class="col-lg-4 myBorderYellow">
-                <h2 class="text-center">Marvel Studio</h2>
-                <img src="assets/img/2.jpg" class="rounded img-fluid" alt="SpiderMan">
-                </p>
-                <ul class="h3 d-grid gap-3">
-                    <li class="text-center">Fabrique de Super Hero </li>
-                    <li class="text-center">Studio Americain</li>
-                    <li class="text-center pb-5 ">Pas la pour enfiller des perles
-                    </li>
-                </ul>
+    <div class="row m-0 p-0">
+        <aside class="col-lg-4 border border-info">
+            <h2 class="text-center">Marvel Studio</h2>
+            <img src="assets/img/2.jpg" class="rounded img-fluid" alt="SpiderMan">
+            </p>
+            <ul class="h3 d-grid gap-3">
+                <li class="text-center">Fabrique de Super Hero </li>
+                <li class="text-center">Studio Americain</li>
+                <li class="text-center pb-5 ">Pas la pour enfiller des perles
+                </li>
+            </ul>
+        </aside>
 
+        <!-- MAIN--------------------------------------------- -->
 
-            </aside>
-
-            <!-- MAIN--------------------------------------------- -->
-            <main class="col-lg-8">
-                <h2 class="text-center text-danger">Tableau des SuperZero</h2>
-                <table class="table table-dark table-striped table-hover table-border border-primary">
+        <main class="col-lg-8 border border-success p-0">
+            <h2 class="text-center text-danger">Tableau des SuperZero</h2>
+            <div class="table-responsive">
+                <table class="table table-dark table-striped table-hover">
                     <thead>
                         <tr>
-                            <th scope=" col">N°</th>
+                            <th scope="col">N°</th>
                             <th scope="col">Nom</th>
                             <th scope="col">Prénom</th>
                             <th scope="col">NomSuper</th>
@@ -94,8 +89,9 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>1 <img src="assets/img/marvel-spider-man-ps4.jpeg" height="50rem" width="50rem"
-                                    scope="row"> </td>
+                            <td>1 <img src="assets/img/marvel-spider-man-ps4.jpeg" height="50px" width="50px"
+                                    scope="row">
+                            </td>
                             <td>Parker</td>
                             <td>Peter</td>
                             <td>Spider Man</td>
@@ -105,13 +101,11 @@
                                     data-bs-target="#exampleModal1">
                                     Plus d'infos
                                 </button>
-
                                 <!-- Modal -->
                                 <div class="modal fade text-black text-center" id="exampleModal1" tabindex="-1"
                                     aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-dialog">
                                         <div class="modal-content">
-
                                             <div class="modal-header">
                                                 <p class="modal-title" id="exampleModalLabel">Spider Man</p>
                                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
@@ -123,10 +117,9 @@
                                                 <p class="h2">
                                                     <p>Fan des araignées</p>
                                                     <p>Aime la pizza</p>
-                                                    <p>Super airaignée</p>
+                                                    <p>Super araignée</p>
                                                 </p>
                                             </div>
-
                                         </div>
                                     </div>
                                 </div>
@@ -144,7 +137,6 @@
                                     data-bs-target="#exampleModal2">
                                     Plus d'infos
                                 </button>
-
                                 <!-- Modal -->
                                 <div class="modal fade text-black text-center" id="exampleModal2" tabindex="-1"
                                     aria-labelledby="exampleModalLabel2" aria-hidden="true">
@@ -163,7 +155,6 @@
                                                     <p>Super armure</p>
                                                 </p>
                                             </div>
-
                                         </div>
                                     </div>
                                 </div>
@@ -181,7 +172,6 @@
                                     data-bs-target="#exampleModal3">
                                     Plus d'infos
                                 </button>
-
                                 <!-- Modal -->
                                 <div class="modal fade text-black text-center" id="exampleModal3" tabindex="-1"
                                     aria-labelledby="exampleModalLabel3" aria-hidden="true">
@@ -216,7 +206,6 @@
                                     data-bs-target="#exampleModal4">
                                     Plus d'infos
                                 </button>
-
                                 <!-- Modal -->
                                 <div class="modal fade text-black text-center" id="exampleModal4" tabindex="-1"
                                     aria-labelledby="exampleModalLabel4" aria-hidden="true">
@@ -252,7 +241,6 @@
                                     data-bs-target="#exampleModal5">
                                     Plus d'infos
                                 </button>
-
                                 <!-- Modal -->
                                 <div class="modal fade text-black text-center" id="exampleModal5" tabindex="-1"
                                     aria-labelledby="exampleModalLabel5" aria-hidden="true">
@@ -288,7 +276,6 @@
                                     data-bs-target="#exampleModal6">
                                     Plus d'infos
                                 </button>
-
                                 <!-- Modal -->
                                 <div class="modal fade text-black text-center" id="exampleModal6" tabindex="-1"
                                     aria-labelledby="exampleModalLabel6" aria-hidden="true">
@@ -324,7 +311,6 @@
                                     data-bs-target="#exampleModal7">
                                     Plus d'infos
                                 </button>
-
                                 <!-- Modal -->
                                 <div class="modal fade text-black text-center" id="exampleModal7" tabindex="-1"
                                     aria-labelledby="exampleModalLabel7" aria-hidden="true">
@@ -360,7 +346,6 @@
                                     data-bs-target="#exampleModal8">
                                     Plus d'infos
                                 </button>
-
                                 <!-- Modal -->
                                 <div class="modal fade text-black text-center" id="exampleModal8" tabindex="-1"
                                     aria-labelledby="exampleModalLabel8" aria-hidden="true">
@@ -396,7 +381,6 @@
                                     data-bs-target="#exampleModal9">
                                     Plus d'infos
                                 </button>
-
                                 <!-- Modal -->
                                 <div class="modal fade text-black text-center" id="exampleModal9" tabindex="-1"
                                     aria-labelledby="exampleModalLabel9" aria-hidden="true">
@@ -432,7 +416,6 @@
                                     data-bs-target="#exampleModal10">
                                     Plus d'infos
                                 </button>
-
                                 <!-- Modal -->
                                 <div class="modal fade text-black text-center" id="exampleModal10" tabindex="-1"
                                     aria-labelledby="exampleModalLabel10" aria-hidden="true">
@@ -458,15 +441,15 @@
                         </tr>
                     </tbody>
                 </table>
-
-        </div>
+            </div>
     </div>
+    </main>
+
+
     <footer>
         <div class="text-dark bg-danger pt-5">
             <p class="text-center pb-5">Mentions Légales</p>
-
         </div>
-
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
